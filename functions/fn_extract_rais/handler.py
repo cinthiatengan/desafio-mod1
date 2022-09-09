@@ -29,7 +29,7 @@ def handler(event, context):
             }
         },
         AppSpecification={
-            'ImageUri': '944471524566.dkr.ecr.us-east-2.amazonaws.com/igti-ney-prod-extract-rais:latest'
+            'ImageUri': '944471524566.dkr.ecr.us-east-2.amazonaws.com/igti-cin-prod-extract-rais:latest'
         },
         RoleArn=sagemaker_role
     )
@@ -38,3 +38,4 @@ def handler(event, context):
         'statusCode': 200,
         'body': f"Started job {process_job_arn['ProcessingJobArn']}"
     }
+#127012818163     
